@@ -13,9 +13,6 @@ RUN npm install
 # Salin semua file proyek ke dalam container
 COPY . .
 
-# Salin file .env ke dalam container
-COPY .env .env
-
 # Expose port internal aplikasi (Express)
 EXPOSE 3000
 

@@ -6,4 +6,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - "10224:3000" # Port keluar 10224 dipetakan ke port internal 3000
+    environment:
+      - HOST=ziadns.my.id
+      - ROOT_TARGET=https://www.suara.com
     restart: always
