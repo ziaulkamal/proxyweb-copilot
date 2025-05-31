@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  seo-proxy-copilot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "10224:3000" # Port keluar 10224 dipetakan ke port internal 3000
+    env_file:
+      - .env # Membaca variabel lingkungan dari file .env
+    restart: always
